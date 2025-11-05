@@ -6,7 +6,30 @@ import { icons } from '@/constants/icons'
 
 const _layout = () => {
     return (
-        <Tabs>
+        <Tabs
+            screenOptions={{
+
+                tabBarItemStyle: {
+                    height: '100%',
+                    width: '100%',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    
+                    
+                },
+                tabBarStyle: {
+                    backgroundColor: 'black',
+                    margin: 20,
+                    borderRadius: 50,
+                    marginBottom: 20,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexDirection: 'row',
+
+                }
+            }}
+        >
             <Tabs.Screen
                 name='index'
                 options={{
@@ -15,10 +38,10 @@ const _layout = () => {
                     tabBarIcon: ({ focused }) => (
 
 
-                        <Image source={icons.home} />
+                        <Image source={icons.home}/>
 
                     ),
-                    tabBarLabel:'Home'
+                    tabBarLabel: 'Home'
 
                 }}
             />
@@ -34,7 +57,7 @@ const _layout = () => {
                         <Image source={icons.save} />
 
                     ),
-                    tabBarLabel:'Saved'
+                    tabBarLabel: 'Saved'
                 }}
             />
             <Tabs.Screen
@@ -48,7 +71,7 @@ const _layout = () => {
                         <Image source={icons.person} />
 
                     ),
-                    tabBarLabel:'Profile'
+                    tabBarLabel: 'Profile'
                 }}
             />
             <Tabs.Screen
@@ -62,7 +85,7 @@ const _layout = () => {
                         <Image source={icons.search} />
 
                     ),
-                    tabBarLabel:'Search'
+                    tabBarLabel: 'Search'
                 }}
             />
 
