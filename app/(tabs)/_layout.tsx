@@ -1,8 +1,8 @@
 
 import React from 'react'
 import { Tabs } from 'expo-router'
-import { ImageBackground } from 'react-native'
-import { images } from '@/constants/images'
+import { Image, } from 'react-native'
+import { icons } from '@/constants/icons'
 
 const _layout = () => {
     return (
@@ -12,13 +12,13 @@ const _layout = () => {
                 options={{
                     title: 'Home',
                     headerShown: false,
-                    tabBarIcon:({focused})=>(
-                        <>
-                        <ImageBackground
-                        source={images.highlight}
-                        />
-                        </>
-                    )
+                    tabBarIcon: ({ focused }) => (
+
+
+                        <Image source={icons.home} />
+
+                    ),
+                    tabBarLabel:'Home'
 
                 }}
             />
@@ -27,21 +27,42 @@ const _layout = () => {
                 name='saved'
                 options={{
                     title: 'saved',
-                    headerShown: false
+                    headerShown: false,
+                    tabBarIcon: ({ focused }) => (
+
+
+                        <Image source={icons.save} />
+
+                    ),
+                    tabBarLabel:'Saved'
                 }}
             />
             <Tabs.Screen
                 name='profile'
                 options={{
                     title: 'profile',
-                    headerShown: false
+                    headerShown: false,
+                    tabBarIcon: ({ focused }) => (
+
+
+                        <Image source={icons.person} />
+
+                    ),
+                    tabBarLabel:'Profile'
                 }}
             />
             <Tabs.Screen
                 name='search'
                 options={{
                     title: 'search',
-                    headerShown: false
+                    headerShown: false,
+                    tabBarIcon: ({ focused }) => (
+
+
+                        <Image source={icons.search} />
+
+                    ),
+                    tabBarLabel:'Search'
                 }}
             />
 
