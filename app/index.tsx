@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import {  Text,  TouchableOpacity, View } from "react-native";
 
 export default function Index() {
   return (
@@ -9,7 +9,15 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen. ok</Text>
+      <Text>Creating first movie app</Text>
+      <TouchableOpacity>
+        <Text style={{
+          backgroundColor: 'black',
+          color: 'white',
+          width: 100,
+          textAlign: 'center'
+        }}>Press me</Text>
+      </TouchableOpacity>
     </View>
   );
 }
