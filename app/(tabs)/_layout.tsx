@@ -1,6 +1,8 @@
 
 import React from 'react'
 import { Tabs } from 'expo-router'
+import { ImageBackground } from 'react-native'
+import { images } from '@/constants/images'
 
 const _layout = () => {
     return (
@@ -9,7 +11,15 @@ const _layout = () => {
                 name='index'
                 options={{
                     title: 'Home',
-                    headerShown: false
+                    headerShown: false,
+                    tabBarIcon:({focused})=>(
+                        <>
+                        <ImageBackground
+                        source={images.highlight}
+                        />
+                        </>
+                    )
+
                 }}
             />
 
