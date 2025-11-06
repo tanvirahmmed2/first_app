@@ -75,6 +75,20 @@ const _layout = () => {
                 }}
             />
             <Tabs.Screen
+                name='cart'
+                options={{
+                    title: 'cart',
+                    headerShown: false,
+                    tabBarIcon: ({ focused }) => (
+
+
+                        <Image source={icons.star} />
+
+                    ),
+                    tabBarLabel: 'Cart'
+                }}
+            />
+            <Tabs.Screen
                 name='search'
                 options={{
                     title: 'search',
