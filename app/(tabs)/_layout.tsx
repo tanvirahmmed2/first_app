@@ -26,6 +26,7 @@ const _layout = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     flexDirection: 'row',
+                    height: 55
 
                 }
             }}
