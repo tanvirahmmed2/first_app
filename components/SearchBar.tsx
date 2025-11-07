@@ -10,6 +10,7 @@ const SearchBar = () => {
         placeholder='search'
         value='search'
         onChangeText={()=>{}}
+        className='text-white'
         />
     </View>
   )
