@@ -6,7 +6,11 @@ const SearchBar = () => {
   return (
     <View className='flex-row items-center bg-black rounded-full p-4'>
       <Image source={icons.search} className='size-5' resizeMode='contain' />
-      <TextInput />
+      <TextInput onPress={()=>{}}
+        placeholder='search'
+        value='search'
+        onChangeText={()=>{}}
+        />
     </View>
   )
 }
