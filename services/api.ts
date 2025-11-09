@@ -1,16 +1,3 @@
-// const url = 'https://api.themoviedb.org/3/discover/movie';
-// const options = {
-//   method: 'GET',
-//   headers: {
-//     accept: 'application/json',
-//     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMjQ3OTViYjI1ZjlhM2E0NmZkZGJjMGQ0NmU2NzlmNyIsIm5iZiI6MTc2MjY2NzMwMy44NjIwMDAyLCJzdWIiOiI2OTEwMmIyN2FlYmRjMTk5M2Q4NzRmYjQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.bgIwugCSC91gCPMze14OEUkpsJbjjietOuy1xTf9uuY'
-//   }
-// };
-
-// fetch(url, options)
-//   .then(res => res.json())
-//   .then(json => console.log(json))
-//   .catch(err => console.error(err));
 
 
 export const TMDB_CONFIG={
@@ -32,7 +19,7 @@ export const fetchMovies=async ({query}: {query:string}) => {
     })
 
     if(!response.ok){
-        throw new Error(`Failed to fetch movies`, response.statusText)
+        throw new Error(`Failed to fetch movies`)
 
     }
     const data= await response.json()
